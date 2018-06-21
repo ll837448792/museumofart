@@ -15,3 +15,4 @@ curl -k -X POST http://localhost:8080/museumofart/project/add -H 'Content-Type:a
   }
 ```
 
+![postman](https://github.com/ll837448792/museumofart/blob/master/postman.png)
