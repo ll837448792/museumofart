@@ -17,3 +17,8 @@ curl -k -X POST http://localhost:8080/project/add -H 'Content-Type:application/j
 
 ![postman](https://github.com/ll837448792/museumofart/blob/master/postman.png)
 ![mysql](https://github.com/ll837448792/museumofart/blob/master/mysql.png)
+
+ERROR 1820 (HY000): You must reset your password using ALTER USER statement before executing this statement.
+mysql> alter user user() identified by "smallsoup";
+
+update user set authentication_string=password("smallsoup") where user="root";
